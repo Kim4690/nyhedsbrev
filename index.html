@@ -4,57 +4,8 @@
 <meta charset="UTF-8">
 <title>BygTek – Før/Efter</title>
 
-    <style>
-
-        /* ===== FINAL FINISH (spacing + balance) ===== */
-
-/* Ens højde */
-.block {
-    width:620px;
-    display:flex;
-    flex-direction:column;
-}
-
-.newsletter {
-    flex:1;
-    display:flex;
-    flex-direction:column;
-    justify-content:space-between;
-}
-
-/* Indhold spacing */
-.left {
-    padding:14px;
-}
-
-.section {
-    margin:16px 0 10px;
-    font-size:14px;
-}
-
-/* Artikler */
-.article {
-    margin-bottom:16px;
-}
-
-.title {
-    line-height:1.25;
-}
-
-.desc {
-    line-height:1.4;
-}
-
-/* Highlight */
-.highlight {
-    padding:12px;
-}
-
-/* Bundbanner */
-.bottom-ad {
-    margin-top:10px;
-}
-        body {
+<style>
+body {
     font-family: Arial, sans-serif;
     background:#e5e5e5;
     margin:0;
@@ -89,17 +40,17 @@
     width:100%;
 }
 
-/* SORT BJÆLKE */
+/* LOGO */
 .logo {
     background:#000;
-    padding:12px 0;
+    padding:6px 0;
     text-align:center;
 }
 
 .logo img {
-    height:28px;
-    display:block;
-    margin:0 auto;
+    height:22px;
+    background:#000;
+    padding:2px 8px;
 }
 
 /* GRID */
@@ -109,7 +60,7 @@
 
 .left {
     width:420px;
-    padding:12px;
+    padding:14px;
 }
 
 .right {
@@ -121,7 +72,7 @@
 /* ARTIKLER */
 .article {
     display:flex;
-    margin-bottom:14px;
+    margin-bottom:16px;
 }
 
 .article img {
@@ -135,29 +86,36 @@
     font-size:14px;
     font-weight:bold;
     margin-bottom:3px;
-    text-align:left;
+    line-height:1.25;
 }
 
 .desc {
     font-size:12px;
     color:#444;
-    line-height:1.35;
-    text-align:left;
+    line-height:1.4;
 }
 
 /* SECTIONS */
 .section {
     background:#e6e6e6;
-    padding:8px;
+    padding:10px;
     font-weight:bold;
-    margin:14px 0;
+    margin:16px 0 10px;
+}
+
+/* BLÅ TEMA */
+.section-blue {
+    background:#d9e3f0;
+    padding:10px;
+    font-weight:bold;
+    margin:16px 0 10px;
 }
 
 /* EFTER highlight */
 .highlight {
-    background:#f1f3f5;
-    padding:10px;
-    border-left:4px solid #999;
+    background:#f5f7fa;
+    padding:12px;
+    border-left:4px solid #b8c7db;
 }
 
 /* ADS */
@@ -179,16 +137,6 @@
     padding:12px;
     font-size:12px;
 }
-
-        .block {
-    width:620px;
-    display:flex;
-    flex-direction:column;
-}
-
-.newsletter {
-    flex:1;
-}
 </style>
 </head>
 
@@ -203,7 +151,7 @@
 <div class="newsletter">
 
 <div class="header">
-    <img src="images/ad_top.png">
+<img src="images/ad_top.png">
 </div>
 
 <div class="logo">
@@ -218,11 +166,7 @@
 <img src="images/img1.png">
 <div>
 <div class="title">Kommuners planlægning er erstatningsfri regulering</div>
-<div class="desc">
-Kommuner kan uden erstatning ændre status på private fællesveje.
-Det giver større fleksibilitet i planlægningen af nye områder.
-Flere projekter forventes påvirket af den nye praksis.
-</div>
+<div class="desc">Kommuner kan uden erstatning ændre status på private fællesveje. Det giver større fleksibilitet. Flere projekter påvirkes.</div>
 </div>
 </div>
 
@@ -230,11 +174,7 @@ Flere projekter forventes påvirket af den nye praksis.
 <img src="images/img2.png">
 <div>
 <div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-<div class="desc">
-En alvorlig arbejdsulykke førte til retssag mod arbejdsgiver.
-Retten vurderer, at sikkerheden var tilstrækkelig på stedet.
-Sagen understreger krav til dokumentation i byggebranchen.
-</div>
+<div class="desc">En alvorlig arbejdsulykke førte til retssag. Retten vurderer sikkerheden var tilstrækkelig. Dokumentation er afgørende.</div>
 </div>
 </div>
 
@@ -242,49 +182,7 @@ Sagen understreger krav til dokumentation i byggebranchen.
 <img src="images/img3.png">
 <div>
 <div class="title">Minkfarme bliver til sociale mødesteder</div>
-<div class="desc">
-Tidligere minkfarme får nyt liv som fællesskabsprojekter.
-Lokale initiativer skaber nye aktiviteter i landdistrikter.
-Flere kommuner arbejder med lignende løsninger.
-</div>
-</div>
-</div>
-
-<div class="section">Ugens tema: EntreprenørMateriel</div>
-
-<div class="article">
-<img src="images/img4.png">
-<div>
-<div class="title">Nye regler for særtransporter</div>
-<div class="desc">
-Transport af tunge elementer får nye krav og procedurer.
-Virksomheder skal sikre bedre planlægning og godkendelser.
-Reglerne træder i kraft i flere faser.
-</div>
-</div>
-</div>
-
-<div class="article">
-<img src="images/img5.png">
-<div>
-<div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">
-Politiet har fundet flere stjålne entreprenørmaskiner.
-Sagen viser øget fokus på organiseret kriminalitet.
-Branchen opfordres til bedre sikring af udstyr.
-</div>
-</div>
-</div>
-
-<div class="article">
-<img src="images/img6.png">
-<div>
-<div class="title">Stemas viser el-maskiner frem</div>
-<div class="desc">
-Elektriske maskiner vinder frem på byggepladser.
-Fokus er på CO2-reduktion og mindre støj.
-Flere leverandører lancerer nye løsninger.
-</div>
+<div class="desc">Tidligere minkfarme får nyt liv som fællesskabsprojekter. Lokale initiativer skaber aktivitet og nye muligheder.</div>
 </div>
 </div>
 
@@ -299,6 +197,28 @@ Flere leverandører lancerer nye løsninger.
 
 <div class="bottom-ad">
 <img src="images/ad3.png">
+</div>
+
+<!-- UGENS TEMA EFTER BANNER -->
+<div style="padding:14px;">
+<div class="section-blue">Ugens tema: EntreprenørMateriel</div>
+
+<div class="article">
+<img src="images/img4.png">
+<div>
+<div class="title">Nye regler for særtransporter</div>
+<div class="desc">Transport af tunge elementer får nye krav. Planlægning og godkendelser skærpes markant.</div>
+</div>
+</div>
+
+<div class="article">
+<img src="images/img5.png">
+<div>
+<div class="title">Stjålne maskiner fundet ved ransagning</div>
+<div class="desc">Politiet har fundet flere stjålne maskiner. Fokus på organiseret kriminalitet øges.</div>
+</div>
+</div>
+
 </div>
 
 <div class="footer">BygTek.dk – Nyhedsbrev</div>
@@ -326,18 +246,13 @@ Flere leverandører lancerer nye løsninger.
 
 <div class="highlight">
 
-<div class="section">Nyheder inden for dine valgte fagområder</div>
+<div class="section">Nyheder inden for dine valgte fagsektioner</div>
 
-<!-- 5 artikler -->
 <div class="article">
 <img src="images/img4.png">
 <div>
 <div class="title">Nye regler for særtransporter</div>
-<div class="desc">
-Skærpede krav til transport af tunge elementer i byggeriet.
-Virksomheder skal tilpasse planlægning og dokumentation.
-Reglerne forventes at påvirke mange projekter.
-</div>
+<div class="desc">Skærpede krav til transport. Virksomheder skal tilpasse planlægning og dokumentation.</div>
 </div>
 </div>
 
@@ -345,11 +260,7 @@ Reglerne forventes at påvirke mange projekter.
 <img src="images/img5.png">
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">
-Politiet har beslaglagt flere maskiner ved en større aktion.
-Tyveri af entreprenørmateriel er stigende.
-Branchen øger fokus på sikring og sporing.
-</div>
+<div class="desc">Politiet har beslaglagt maskiner. Tyveri er stigende og kræver øget fokus.</div>
 </div>
 </div>
 
@@ -357,11 +268,7 @@ Branchen øger fokus på sikring og sporing.
 <img src="images/img6.png">
 <div>
 <div class="title">Stemas viser el-maskiner frem</div>
-<div class="desc">
-Elektriske maskiner bliver mere udbredte på byggepladser.
-De reducerer både støj og CO2-udledning.
-Efterspørgslen stiger blandt entreprenører.
-</div>
+<div class="desc">Elektriske maskiner vinder frem. CO2 og støj reduceres markant.</div>
 </div>
 </div>
 
@@ -369,11 +276,7 @@ Efterspørgslen stiger blandt entreprenører.
 <img src="images/img4.png">
 <div>
 <div class="title">Flere projekter kræver specialtransport</div>
-<div class="desc">
-Større byggeprojekter stiller nye krav til logistik.
-Specialtransport bliver en vigtig del af planlægningen.
-Eksperter forventer øget kompleksitet fremover.
-</div>
+<div class="desc">Større projekter stiller krav til logistik. Kompleksiteten stiger.</div>
 </div>
 </div>
 
@@ -385,11 +288,7 @@ Eksperter forventer øget kompleksitet fremover.
 <img src="images/img1.png">
 <div>
 <div class="title">Kommuners planlægning er erstatningsfri regulering</div>
-<div class="desc">
-Kommuner får større frihed i planlægning af veje.
-Det påvirker udviklingen i flere områder.
-Nye projekter tilpasses reglerne.
-</div>
+<div class="desc">Kommuner får større frihed i planlægning. Flere projekter tilpasses.</div>
 </div>
 </div>
 
@@ -397,23 +296,7 @@ Nye projekter tilpasses reglerne.
 <img src="images/img2.png">
 <div>
 <div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-<div class="desc">
-Retten vurderer, at reglerne er overholdt.
-Sagen giver klarhed om ansvar.
-Dokumentation er fortsat afgørende.
-</div>
-</div>
-</div>
-
-<div class="article">
-<img src="images/img3.png">
-<div>
-<div class="title">Minkfarme bliver til sociale mødesteder</div>
-<div class="desc">
-Nye projekter skaber liv i tidligere landbrugsområder.
-Fokus er på fællesskab og aktivitet.
-Flere initiativer er på vej.
-</div>
+<div class="desc">Retten vurderer reglerne er overholdt. Dokumentation er afgørende.</div>
 </div>
 </div>
 
