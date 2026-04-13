@@ -1,4 +1,240 @@
-<!-- EFTER -->
+<!DOCTYPE html>
+<html lang="da">
+<head>
+<meta charset="UTF-8">
+<title>BygTek – Før/Efter</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background:#e5e5e5;
+    margin:0;
+    padding:30px;
+}
+
+/* SIDE BY SIDE */
+.wrapper {
+    display:flex;
+    justify-content:center;
+    gap:50px;
+    align-items:flex-start;
+}
+
+/* BLOK */
+.block {
+    width:620px;
+}
+
+.label {
+    text-align:center;
+    font-size:26px;
+    color:#999;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.newsletter {
+    background:#fff;
+    border:1px solid #ddd;
+}
+
+/* HEADER */
+.header img {
+    width:100%;
+    display:block;
+}
+
+/* LOGO */
+.logo {
+    background:#000;
+    text-align:center;
+    padding:10px 0;
+}
+
+.logo img {
+    height:26px;
+}
+
+/* GRID */
+.container {
+    display:flex;
+}
+
+.left {
+    width:420px;
+    padding:14px;
+}
+
+.right {
+    width:200px;
+    padding:12px;
+    background:#f3f3f3;
+}
+
+/* ARTIKLER */
+.article {
+    display:flex;
+    margin-bottom:14px;
+}
+
+.article img {
+    width:90px;
+    height:65px;
+    margin-right:10px;
+    object-fit:cover;
+}
+
+.title {
+    font-size:14px;
+    font-weight:bold;
+    line-height:1.25;
+}
+
+.desc {
+    font-size:12px;
+    color:#444;
+    line-height:1.35;
+}
+
+/* SECTIONS */
+.section {
+    background:#efefef;
+    padding:10px;
+    font-weight:bold;
+    margin:16px 0 10px;
+}
+
+/* BLÅ TEMA */
+.section-blue {
+    background:#dfe8f3;
+    padding:10px;
+    font-weight:bold;
+    margin:16px 0 10px;
+}
+
+/* EFTER highlight */
+.highlight {
+    background:#f5f7fa;
+    padding:12px;
+    border-left:4px solid #b7c7dc;
+}
+
+/* ADS */
+.ad img {
+    width:100%;
+    margin-bottom:10px;
+    display:block;
+}
+
+/* BUND */
+.bottom-ad img {
+    width:100%;
+    display:block;
+}
+
+.footer {
+    background:#000;
+    color:#fff;
+    text-align:center;
+    padding:12px;
+    font-size:12px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<!-- ================= FØR ================= -->
+<div class="block">
+<div class="label">FØR</div>
+
+<div class="newsletter">
+
+<div class="header">
+<img src="images/ad_top.png">
+</div>
+
+<div class="logo">
+<img src="https://bygtek.dk/gfx/bygtek-logo-3.png">
+</div>
+
+<div class="container">
+
+<div class="left">
+
+<div class="article">
+<img src="images/img1.png">
+<div>
+<div class="title">Kommuners planlægning er erstatningsfri regulering</div>
+<div class="desc">Kommuner får større fleksibilitet i planlægningen.</div>
+</div>
+</div>
+
+<div class="article">
+<img src="images/img2.png">
+<div>
+<div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
+<div class="desc">Retten vurderer sikkerheden var tilstrækkelig.</div>
+</div>
+</div>
+
+<div class="article">
+<img src="images/img3.png">
+<div>
+<div class="title">Minkfarme bliver til sociale mødesteder</div>
+<div class="desc">Nye initiativer skaber aktivitet lokalt.</div>
+</div>
+</div>
+
+<div class="article">
+<img src="images/img4.png">
+<div>
+<div class="title">Nye regler for særtransporter</div>
+<div class="desc">Transport af tunge elementer får nye krav.</div>
+</div>
+</div>
+
+</div>
+
+<div class="right">
+<div class="ad"><img src="images/ad1.png"></div>
+<div class="ad"><img src="images/ad2.png"></div>
+</div>
+
+</div>
+
+<div class="bottom-ad">
+<img src="images/ad3.png">
+</div>
+
+<div style="padding:14px;">
+<div class="section-blue">Ugens tema: EntreprenørMateriel</div>
+
+<div class="article">
+<img src="images/img5.png">
+<div>
+<div class="title">Stjålne maskiner fundet ved ransagning</div>
+<div class="desc">Øget fokus på tyveri i branchen.</div>
+</div>
+</div>
+
+<div class="article">
+<img src="images/img6.png">
+<div>
+<div class="title">Stemas viser el-maskiner frem</div>
+<div class="desc">CO2 og støj reduceres markant.</div>
+</div>
+</div>
+</div>
+
+<div class="footer">BygTek.dk – Nyhedsbrev</div>
+
+</div>
+</div>
+
+<!-- ================= EFTER ================= -->
 <div class="block">
 <div class="label">EFTER</div>
 
@@ -14,10 +250,8 @@
 
 <div class="container">
 
-<!-- VENSTRE -->
 <div class="left">
 
-<!-- PERSONLIGT -->
 <div class="highlight">
 
 <div class="section">Nyheder inden for dine valgte fagsektioner</div>
@@ -56,7 +290,6 @@
 
 </div>
 
-<!-- BLÅ TEMA (KORREKT PLACERING) -->
 <div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
@@ -67,7 +300,6 @@
 </div>
 </div>
 
-<!-- ØVRIGE -->
 <div class="section">Øvrige nyheder fra BygTek.dk</div>
 
 <div class="article">
@@ -86,15 +318,13 @@
 
 </div>
 
-<!-- HØJRE -->
 <div class="right">
 <div class="ad"><img src="images/ad1.png"></div>
 <div class="ad"><img src="images/ad2.png"></div>
 </div>
 
-</div> <!-- container -->
+</div>
 
-<!-- BUND BANNER -->
 <div class="bottom-ad">
 <img src="images/ad3.png">
 </div>
@@ -103,3 +333,8 @@
 
 </div>
 </div>
+
+</div>
+
+</body>
+</html>
