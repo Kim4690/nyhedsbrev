@@ -41,15 +41,18 @@ body {
 /* LOGO (FIXED) */
 .logo {
     background:#000;
-    text-align:center;
-    padding:16px 0;
+    height:60px;              /* FAST højde = ens begge sider */
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
 
 .logo img {
-    width:260px;     /* styr bredde – ikke height */
+    width:260px;
     height:auto;
     display:block;
     margin:0 auto;
+    mix-blend-mode: multiply;
 }
 
 /* GRID */
