@@ -20,9 +20,7 @@ body {
     flex-wrap:wrap;
 }
 
-.block {
-    width:620px;
-}
+.block { width:620px; }
 
 .label {
     text-align:center;
@@ -37,26 +35,26 @@ body {
     border:1px solid #ddd;
 }
 
+/* HEADER */
 .header img {
     width:100%;
     display:block;
 }
 
-/* LOGO BJÆLKE (lavere) */
+/* LOGO */
 .logo {
     background:#1a1a1a;
-    height:40px;
+    height:38px;
     display:flex;
     align-items:center;
-    padding:0 14px;
     justify-content:space-between;
+    padding:0 12px;
 }
 
 .logo img {
     height:24px;
 }
 
-/* DATO */
 .date {
     color:#fff;
     font-size:11px;
@@ -81,8 +79,7 @@ body {
 /* ARTIKLER */
 .article {
     display:flex;
-    margin-bottom:14px;
-    min-height:65px;
+    margin-bottom:12px;
 }
 
 .article img {
@@ -109,29 +106,29 @@ body {
     overflow:hidden;
 }
 
-/* GRØN SEKTION (som du ville have) */
+/* GRØN NYHEDSBLOK */
 .section-green {
-    background:#e6f2e9;
-    border-left:4px solid #4f8a5b;
+    background:#cfe3d4;              /* tydelig grøn baggrund */
+    border-left:5px solid #2f6b3f;   /* grøn venstrestreg */
+    color:#1e4d2b;
     padding:10px;
     font-weight:bold;
     margin-bottom:8px;
 }
 
-/* STANDARD SECTION */
+/* STANDARD */
 .section {
     background:#e6e6e6;
     padding:8px;
     font-weight:bold;
-    margin:10px 0 8px;
+    margin:8px 0 6px;   /* mindre luft */
 }
 
-/* BLÅ */
 .section-blue {
     background:#d9e3f0;
     padding:8px;
     font-weight:bold;
-    margin:10px 0 8px;
+    margin:8px 0 6px;
 }
 
 /* EFTER BOX */
@@ -146,9 +143,9 @@ body {
     margin-bottom:8px;
 }
 
-/* BUND BANNER (mindre spacing) */
+/* BUND BANNER – MINIMAL LUFT */
 .bottom-ad {
-    margin:6px 0;
+    margin:2px 0;   /* 🔥 reduceret */
 }
 
 .bottom-ad img {
@@ -193,11 +190,7 @@ body {
 <img src="images/img1.png">
 <div>
 <div class="title">Kommuners planlægning er erstatningsfri regulering</div>
-<div class="desc">
-Kommuner kan uden erstatning ændre status på private fællesveje.
-Det giver større fleksibilitet i planlægningen af nye områder.
-Flere projekter forventes påvirket af den nye praksis.
-</div>
+<div class="desc">Kommuner kan ændre status på veje. Det giver fleksibilitet i planlægning. Flere projekter påvirkes.</div>
 </div>
 </div>
 
@@ -205,11 +198,7 @@ Flere projekter forventes påvirket af den nye praksis.
 <img src="images/img2.png">
 <div>
 <div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-<div class="desc">
-En alvorlig arbejdsulykke førte til retssag mod arbejdsgiver.
-Retten vurderer, at sikkerheden var tilstrækkelig.
-Sagen understreger krav til dokumentation.
-</div>
+<div class="desc">Retten vurderer sikkerheden var tilstrækkelig. Dokumentation er afgørende i branchen.</div>
 </div>
 </div>
 
@@ -217,11 +206,7 @@ Sagen understreger krav til dokumentation.
 <img src="images/img3.png">
 <div>
 <div class="title">Minkfarme bliver til sociale mødesteder</div>
-<div class="desc">
-Tidligere minkfarme får nyt liv som fællesskabsprojekter.
-Lokale initiativer skaber aktivitet.
-Flere kommuner arbejder med lignende løsninger.
-</div>
+<div class="desc">Lokale projekter skaber nyt liv. Fællesskab og aktiviteter vokser.</div>
 </div>
 </div>
 
@@ -229,11 +214,7 @@ Flere kommuner arbejder med lignende løsninger.
 <img src="images/img4.png">
 <div>
 <div class="title">Nye regler for særtransporter</div>
-<div class="desc">
-Transport af tunge elementer får nye krav.
-Virksomheder skal sikre bedre planlægning.
-Reglerne træder i kraft i flere faser.
-</div>
+<div class="desc">Transport får nye krav. Planlægning og godkendelser skærpes.</div>
 </div>
 </div>
 
@@ -250,18 +231,14 @@ Reglerne træder i kraft i flere faser.
 <img src="images/ad3.png">
 </div>
 
-<div style="padding:12px;">
+<div style="padding:10px;">
 <div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
 <img src="images/img5.png">
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">
-Politiet har fundet flere stjålne maskiner.
-Øget fokus på kriminalitet i branchen.
-Sikring bliver vigtigere fremover.
-</div>
+<div class="desc">Tyveri er stigende. Fokus på sikring øges i branchen.</div>
 </div>
 </div>
 
@@ -301,11 +278,7 @@ Nyheder inden for dine valgte fagsektioner
 <img src="images/img4.png">
 <div>
 <div class="title">Nye regler for særtransporter</div>
-<div class="desc">
-Skærpede krav til transport af tunge elementer.
-Virksomheder skal tilpasse planlægning.
-Reglerne påvirker mange projekter.
-</div>
+<div class="desc">Skærpede krav til transport. Projekter påvirkes bredt.</div>
 </div>
 </div>
 
@@ -313,11 +286,7 @@ Reglerne påvirker mange projekter.
 <img src="images/img5.png">
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">
-Politiet har beslaglagt maskiner ved aktion.
-Tyveri er stigende i branchen.
-Fokus på sikring og sporing øges.
-</div>
+<div class="desc">Tyveri stiger. Branchen øger fokus på sikkerhed.</div>
 </div>
 </div>
 
@@ -325,11 +294,7 @@ Fokus på sikring og sporing øges.
 <img src="images/img6.png">
 <div>
 <div class="title">Stemas viser el-maskiner frem</div>
-<div class="desc">
-Elektriske maskiner vinder frem.
-CO2 og støj reduceres.
-Efterspørgslen stiger blandt entreprenører.
-</div>
+<div class="desc">CO2 og støj reduceres. Efterspørgsel stiger.</div>
 </div>
 </div>
 
@@ -337,11 +302,7 @@ Efterspørgslen stiger blandt entreprenører.
 <img src="images/img4.png">
 <div>
 <div class="title">Flere projekter kræver specialtransport</div>
-<div class="desc">
-Større projekter kræver bedre logistik.
-Specialtransport bliver vigtig.
-Kompleksiteten stiger fremover.
-</div>
+<div class="desc">Logistik bliver vigtigere. Kompleksiteten vokser.</div>
 </div>
 </div>
 
@@ -351,16 +312,12 @@ Kompleksiteten stiger fremover.
 
 <div class="article">
 <img src="images/img1.png">
-<div>
-<div class="title">Kommuners planlægning er erstatningsfri regulering</div>
-</div>
+<div><div class="title">Kommuners planlægning er erstatningsfri regulering</div></div>
 </div>
 
 <div class="article">
 <img src="images/img2.png">
-<div>
-<div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-</div>
+<div><div class="title">Arbejdsgiver frikendt for arbejdsulykke</div></div>
 </div>
 
 </div>
@@ -376,18 +333,14 @@ Kompleksiteten stiger fremover.
 <img src="images/ad3.png">
 </div>
 
-<div style="padding:12px;">
+<div style="padding:10px;">
 <div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
 <img src="images/img5.png">
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">
-Fokus på sikkerhed og kontrol.
-Virksomheder arbejder mere systematisk.
-Forebyggelse bliver centralt.
-</div>
+<div class="desc">Fokus på sikkerhed og kontrol i branchen.</div>
 </div>
 </div>
 
@@ -400,12 +353,10 @@ Forebyggelse bliver centralt.
 
 </div>
 
-<!-- AUTO DATO -->
 <script>
 function formatDate() {
     const d = new Date();
     const days = ["SØNDAG","MANDAG","TIRSDAG","ONSDAG","TORSDAG","FREDAG","LØRDAG"];
-    const months = ["JANUAR","FEBRUAR","MARTS","APRIL","MAJ","JUNI","JULI","AUGUST","SEPTEMBER","OKTOBER","NOVEMBER","DECEMBER"];
     return days[d.getDay()] + " " + d.getDate() + "/" + (d.getMonth()+1) + " " + d.getFullYear();
 }
 document.getElementById("date1").innerText = formatDate();
