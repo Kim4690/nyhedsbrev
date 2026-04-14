@@ -12,7 +12,6 @@ body {
     padding:30px;
 }
 
-/* SIDE BY SIDE */
 .wrapper {
     display:flex;
     justify-content:center;
@@ -21,7 +20,6 @@ body {
     flex-wrap:wrap;
 }
 
-/* BLOK */
 .block {
     width:620px;
 }
@@ -39,13 +37,12 @@ body {
     border:1px solid #ddd;
 }
 
-/* HEADER */
 .header img {
     width:100%;
     display:block;
 }
 
-/* LOGO (ENDGYLDIG) */
+/* LOGO */
 .logo {
     background:#1a1a1a;
     height:46px;
@@ -56,7 +53,6 @@ body {
 
 .logo img {
     height:28px;
-    display:block;
 }
 
 /* GRID */
@@ -79,6 +75,7 @@ body {
 .article {
     display:flex;
     margin-bottom:16px;
+    min-height:70px;
 }
 
 .article img {
@@ -98,6 +95,11 @@ body {
     font-size:12px;
     color:#444;
     line-height:1.4;
+
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
 }
 
 /* SECTIONS */
@@ -108,7 +110,7 @@ body {
     margin:16px 0 10px;
 }
 
-/* GRØN SEKTION (ENDGYLDIG) */
+/* GRØN */
 .section-green {
     background:#e9f3ec;
     border-left:4px solid #5e8f65;
@@ -117,7 +119,7 @@ body {
     margin-bottom:10px;
 }
 
-/* BLÅ TEMA */
+/* BLÅ */
 .section-blue {
     background:#d9e3f0;
     padding:10px;
@@ -125,19 +127,16 @@ body {
     margin:16px 0 10px;
 }
 
-/* EFTER highlight */
 .highlight {
     background:#f3f3f3;
     padding:10px;
 }
 
-/* ADS */
 .ad img {
     width:100%;
     margin-bottom:10px;
 }
 
-/* BUND */
 .bottom-ad img {
     width:100%;
     display:block;
@@ -157,7 +156,7 @@ body {
 
 <div class="wrapper">
 
-<!-- ================= FØR ================= -->
+<!-- FØR -->
 <div class="block">
 <div class="label">FØR</div>
 
@@ -179,7 +178,11 @@ body {
 <img src="images/img1.png">
 <div>
 <div class="title">Kommuners planlægning er erstatningsfri regulering</div>
-<div class="desc">Kommuner får større fleksibilitet i planlægningen.</div>
+<div class="desc">
+Kommuner kan uden erstatning ændre status på private fællesveje.
+Det giver større fleksibilitet i planlægningen af nye områder.
+Flere projekter forventes påvirket af den nye praksis.
+</div>
 </div>
 </div>
 
@@ -187,7 +190,11 @@ body {
 <img src="images/img2.png">
 <div>
 <div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-<div class="desc">Retten vurderer sikkerheden var tilstrækkelig.</div>
+<div class="desc">
+En alvorlig arbejdsulykke førte til retssag mod arbejdsgiver.
+Retten vurderer, at sikkerheden var tilstrækkelig på stedet.
+Sagen understreger krav til dokumentation i byggebranchen.
+</div>
 </div>
 </div>
 
@@ -195,7 +202,11 @@ body {
 <img src="images/img3.png">
 <div>
 <div class="title">Minkfarme bliver til sociale mødesteder</div>
-<div class="desc">Nye initiativer skaber aktivitet lokalt.</div>
+<div class="desc">
+Tidligere minkfarme får nyt liv som fællesskabsprojekter.
+Lokale initiativer skaber nye aktiviteter i landdistrikter.
+Flere kommuner arbejder med lignende løsninger.
+</div>
 </div>
 </div>
 
@@ -203,15 +214,11 @@ body {
 <img src="images/img4.png">
 <div>
 <div class="title">Nye regler for særtransporter</div>
-<div class="desc">Transport af tunge elementer får nye krav.</div>
+<div class="desc">
+Transport af tunge elementer får nye krav og procedurer.
+Virksomheder skal sikre bedre planlægning og godkendelser.
+Reglerne træder i kraft i flere faser.
 </div>
-</div>
-
-<div class="article">
-<img src="images/img5.png">
-<div>
-<div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">Tyveri er stigende i branchen.</div>
 </div>
 </div>
 
@@ -229,14 +236,17 @@ body {
 </div>
 
 <div style="padding:14px;">
-
 <div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
-<img src="images/img6.png">
+<img src="images/img5.png">
 <div>
-<div class="title">Stemas viser el-maskiner frem</div>
-<div class="desc">CO2 og støj reduceres markant.</div>
+<div class="title">Stjålne maskiner fundet ved ransagning</div>
+<div class="desc">
+Politiet har fundet flere stjålne entreprenørmaskiner.
+Sagen viser øget fokus på organiseret kriminalitet.
+Branchen opfordres til bedre sikring af udstyr.
+</div>
 </div>
 </div>
 
@@ -247,7 +257,7 @@ body {
 </div>
 </div>
 
-<!-- ================= EFTER ================= -->
+<!-- EFTER -->
 <div class="block">
 <div class="label">EFTER</div>
 
@@ -275,7 +285,11 @@ Nyheder inden for dine valgte fagsektioner
 <img src="images/img4.png">
 <div>
 <div class="title">Nye regler for særtransporter</div>
-<div class="desc">Skærpede krav til planlægning.</div>
+<div class="desc">
+Skærpede krav til transport af tunge elementer i byggeriet.
+Virksomheder skal tilpasse planlægning og dokumentation.
+Reglerne forventes at påvirke mange projekter.
+</div>
 </div>
 </div>
 
@@ -283,7 +297,11 @@ Nyheder inden for dine valgte fagsektioner
 <img src="images/img5.png">
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">Tyveri er stigende i branchen.</div>
+<div class="desc">
+Politiet har beslaglagt flere maskiner ved en større aktion.
+Tyveri af entreprenørmateriel er stigende.
+Branchen øger fokus på sikring og sporing.
+</div>
 </div>
 </div>
 
@@ -291,7 +309,11 @@ Nyheder inden for dine valgte fagsektioner
 <img src="images/img6.png">
 <div>
 <div class="title">Stemas viser el-maskiner frem</div>
-<div class="desc">CO2 og støj reduceres markant.</div>
+<div class="desc">
+Elektriske maskiner bliver mere udbredte på byggepladser.
+De reducerer både støj og CO2-udledning.
+Efterspørgslen stiger blandt entreprenører.
+</div>
 </div>
 </div>
 
@@ -299,7 +321,11 @@ Nyheder inden for dine valgte fagsektioner
 <img src="images/img4.png">
 <div>
 <div class="title">Flere projekter kræver specialtransport</div>
-<div class="desc">Logistik bliver vigtigere.</div>
+<div class="desc">
+Større byggeprojekter stiller nye krav til logistik.
+Specialtransport bliver en vigtig del af planlægningen.
+Eksperter forventer øget kompleksitet fremover.
+</div>
 </div>
 </div>
 
@@ -335,14 +361,17 @@ Nyheder inden for dine valgte fagsektioner
 </div>
 
 <div style="padding:14px;">
-
 <div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
 <img src="images/img5.png">
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">Fokus på sikkerhed og kontrol.</div>
+<div class="desc">
+Fokus på sikkerhed og kontrol i branchen.
+Virksomheder arbejder mere systematisk.
+Forebyggelse bliver en vigtig faktor fremover.
+</div>
 </div>
 </div>
 
