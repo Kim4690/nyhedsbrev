@@ -38,21 +38,21 @@ body {
 /* HEADER */
 .header img { width:100%; display:block; }
 
-/* LOGO (FIXED) */
+/* LOGO – FAST & ENS */
 .logo {
     background:#000;
-    height:60px;              /* FAST højde = ens begge sider */
+    height:60px;
     display:flex;
     align-items:center;
     justify-content:center;
+    overflow:hidden;
 }
 
+/* NYT LOGO */
 .logo img {
-    width:260px;
-    height:auto;
+    height:34px;
+    width:auto;
     display:block;
-    margin:0 auto;
-    mix-blend-mode: multiply;
 }
 
 /* GRID */
@@ -74,22 +74,25 @@ body {
     display:flex;
     margin-bottom:14px;
 }
+
 .article img {
     width:90px;
     height:65px;
     margin-right:10px;
     object-fit:cover;
 }
+
 .title {
     font-size:14px;
     font-weight:bold;
 }
+
 .desc {
     font-size:12px;
     color:#444;
 }
 
-/* STANDARD BJÆLKE */
+/* STANDARD */
 .section {
     background:#efefef;
     padding:10px;
@@ -99,28 +102,26 @@ body {
 
 /* GRØN TEMA */
 .section-green {
-    background:#eef5ee;
+    background:#e6f0e6;
     padding:10px;
     font-weight:bold;
     margin:16px 0 10px;
 }
 
-/* HIGHLIGHT (PERSONLIG) */
+/* PERSONLIG */
 .highlight {
     background:#f7faf7;
     padding:12px;
-    border-left:4px solid #7fa77a;
+    border-left:4px solid #6f9a6f;
 }
 
-/* NYHEDER BJÆLKE (GRØN) */
 .section-personal {
-    background:#d6e6d6; /* 70-80% grøn tone */
-    color:#2f5e2f;      /* mørk grøn tekst */
+    background:#d6e6d6;
+    color:#2f5e2f;
     padding:10px;
     font-weight:bold;
     margin-bottom:10px;
     border-left:4px solid #6f9a6f;
-    border-radius:2px;
 }
 
 /* ADS */
@@ -150,7 +151,7 @@ body {
 
 <div class="wrapper">
 
-<!-- ================= FØR ================= -->
+<!-- FØR -->
 <div class="block">
 <div class="label">FØR</div>
 
@@ -161,14 +162,13 @@ body {
 </div>
 
 <div class="logo">
-<img src="https://bygtek.dk/gfx/bygtek-logo-3.png" alt="BygTek">>
+<img src="images/logo-002.png">
 </div>
 
 <div class="container">
 
 <div class="left">
 
-<!-- 5 artikler (DU BAD OM EN EKSTRA) -->
 <div class="article">
 <img src="images/img1.png">
 <div>
@@ -193,16 +193,6 @@ body {
 </div>
 </div>
 
-
-<div class="article">
-<img src="images/img6.png">
-<div>
-<div class="title">Stemas viser el-maskiner frem</div>
-<div class="desc">CO2 og støj reduceres markant.</div>
-</div>
-</div>
-
-    
 <div class="article">
 <img src="images/img4.png">
 <div>
@@ -216,14 +206,6 @@ body {
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
 <div class="desc">Tyveri er stigende i branchen.</div>
-</div>
-</div>
-
-<div class="article">
-<img src="images/img2.png">
-<div>
-<div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-<div class="desc">Retten vurderer sikkerheden var tilstrækkelig.</div>
 </div>
 </div>
 
@@ -257,7 +239,7 @@ body {
 </div>
 </div>
 
-<!-- ================= EFTER ================= -->
+<!-- EFTER -->
 <div class="block">
 <div class="label">EFTER</div>
 
@@ -268,7 +250,7 @@ body {
 </div>
 
 <div class="logo">
-<img src="https://bygtek.dk/gfx/bygtek-logo-3.png" alt="BygTek">
+<img src="images/logo-002.png">
 </div>
 
 <div class="container">
@@ -281,7 +263,6 @@ body {
 Nyheder inden for dine valgte fagsektioner
 </div>
 
-<!-- 5 artikler -->
 <div class="article">
 <img src="images/img4.png">
 <div>
@@ -314,14 +295,6 @@ Nyheder inden for dine valgte fagsektioner
 </div>
 </div>
 
-<div class="article">
-<img src="images/img3.png">
-<div>
-<div class="title">Minkfarme bliver til sociale mødesteder</div>
-<div class="desc">Nye initiativer skaber aktivitet lokalt.</div>
-</div>
-</div>
-    
 </div>
 
 <div class="section">Øvrige nyheder fra BygTek.dk</div>
@@ -349,7 +322,6 @@ Nyheder inden for dine valgte fagsektioner
 
 </div>
 
-<!-- FLYTTET NED (som du bad om) -->
 <div class="bottom-ad">
 <img src="images/ad3.png">
 </div>
