@@ -12,15 +12,19 @@ body {
     padding:30px;
 }
 
-/* LAYOUT */
+/* SIDE BY SIDE */
 .wrapper {
     display:flex;
     justify-content:center;
-    gap:50px;
+    gap:40px;
     align-items:flex-start;
+    flex-wrap:wrap;
 }
 
-.block { width:620px; }
+/* BLOK */
+.block {
+    width:620px;
+}
 
 .label {
     text-align:center;
@@ -36,27 +40,29 @@ body {
 }
 
 /* HEADER */
-.header img { width:100%; display:block; }
-
-/* LOGO – FAST & ENS */
-.logo {
-    background:#000;
-    height:60px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    overflow:hidden;
+.header img {
+    width:100%;
+    display:block;
 }
 
-/* NYT LOGO */
+/* LOGO (ENDGYLDIG) */
+.logo {
+    background:#1a1a1a;
+    height:46px;
+    display:flex;
+    align-items:center;
+    padding-left:14px;
+}
+
 .logo img {
-    height:34px;
-    width:auto;
+    height:28px;
     display:block;
 }
 
 /* GRID */
-.container { display:flex; }
+.container {
+    display:flex;
+}
 
 .left {
     width:420px;
@@ -66,13 +72,13 @@ body {
 .right {
     width:200px;
     padding:12px;
-    background:#f3f3f3;
+    background:#f2f2f2;
 }
 
 /* ARTIKLER */
 .article {
     display:flex;
-    margin-bottom:14px;
+    margin-bottom:16px;
 }
 
 .article img {
@@ -85,50 +91,50 @@ body {
 .title {
     font-size:14px;
     font-weight:bold;
+    line-height:1.25;
 }
 
 .desc {
     font-size:12px;
     color:#444;
+    line-height:1.4;
 }
 
-/* STANDARD */
+/* SECTIONS */
 .section {
-    background:#efefef;
+    background:#e6e6e6;
     padding:10px;
     font-weight:bold;
     margin:16px 0 10px;
 }
 
-/* GRØN TEMA */
+/* GRØN SEKTION (ENDGYLDIG) */
 .section-green {
-    background:#e6f0e6;
-    padding:10px;
-    font-weight:bold;
-    margin:16px 0 10px;
-}
-
-/* PERSONLIG */
-.highlight {
-    background:#f7faf7;
-    padding:12px;
-    border-left:4px solid #6f9a6f;
-}
-
-.section-personal {
-    background:#d6e6d6;
-    color:#2f5e2f;
+    background:#e9f3ec;
+    border-left:4px solid #5e8f65;
     padding:10px;
     font-weight:bold;
     margin-bottom:10px;
-    border-left:4px solid #6f9a6f;
+}
+
+/* BLÅ TEMA */
+.section-blue {
+    background:#d9e3f0;
+    padding:10px;
+    font-weight:bold;
+    margin:16px 0 10px;
+}
+
+/* EFTER highlight */
+.highlight {
+    background:#f3f3f3;
+    padding:10px;
 }
 
 /* ADS */
 .ad img {
     width:100%;
     margin-bottom:10px;
-    display:block;
 }
 
 /* BUND */
@@ -151,7 +157,7 @@ body {
 
 <div class="wrapper">
 
-<!-- FØR -->
+<!-- ================= FØR ================= -->
 <div class="block">
 <div class="label">FØR</div>
 
@@ -223,7 +229,8 @@ body {
 </div>
 
 <div style="padding:14px;">
-<div class="section-green">Ugens tema: EntreprenørMateriel</div>
+
+<div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
 <img src="images/img6.png">
@@ -232,6 +239,7 @@ body {
 <div class="desc">CO2 og støj reduceres markant.</div>
 </div>
 </div>
+
 </div>
 
 <div class="footer">BygTek.dk – Nyhedsbrev</div>
@@ -239,7 +247,7 @@ body {
 </div>
 </div>
 
-<!-- EFTER -->
+<!-- ================= EFTER ================= -->
 <div class="block">
 <div class="label">EFTER</div>
 
@@ -259,7 +267,7 @@ body {
 
 <div class="highlight">
 
-<div class="section-personal">
+<div class="section-green">
 Nyheder inden for dine valgte fagsektioner
 </div>
 
@@ -327,7 +335,8 @@ Nyheder inden for dine valgte fagsektioner
 </div>
 
 <div style="padding:14px;">
-<div class="section-green">Ugens tema: EntreprenørMateriel</div>
+
+<div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
 <img src="images/img5.png">
@@ -336,6 +345,7 @@ Nyheder inden for dine valgte fagsektioner
 <div class="desc">Fokus på sikkerhed og kontrol.</div>
 </div>
 </div>
+
 </div>
 
 <div class="footer">BygTek.dk – Nyhedsbrev</div>
