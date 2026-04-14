@@ -12,6 +12,7 @@ body {
     padding:30px;
 }
 
+/* WRAPPER */
 .wrapper {
     display:flex;
     justify-content:center;
@@ -41,10 +42,10 @@ body {
     display:block;
 }
 
-/* LOGO */
+/* LOGO BAR */
 .logo {
     background:#1a1a1a;
-    height:36px;
+    height:34px;
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -72,7 +73,7 @@ body {
     background:#f2f2f2;
 }
 
-/* ARTIKLER */
+/* ARTICLES */
 .article {
     display:flex;
     margin-bottom:12px;
@@ -97,23 +98,23 @@ body {
     line-height:1.4;
 }
 
-/* GRØN NYHEDSSEKTION */
+/* 🔥 LYSERE GRØN */
 .news-box {
-    background:#d8e3d9;
+    background:#eef7f0;              /* lysere */
     border-left:5px solid #2f6b3f;
     padding:10px;
     margin-bottom:10px;
 }
 
 .news-box .headline {
-    background:#cfe3d4;
+    background:#dcefe2;              /* lys grøn bjælke */
     color:#1e4d2b;
     padding:8px;
     font-weight:bold;
     margin-bottom:8px;
 }
 
-/* STANDARD */
+/* SECTIONS */
 .section {
     background:#e6e6e6;
     padding:8px;
@@ -134,7 +135,7 @@ body {
     margin-bottom:8px;
 }
 
-/* BUND */
+/* BOTTOM */
 .bottom-ad {
     margin:2px 0;
 }
@@ -157,7 +158,7 @@ body {
 
 <body>
 
-<div class="wrapper">
+<div class="wrapper" id="wrapper">
 
 <!-- FØR -->
 <div class="block" id="before">
@@ -182,7 +183,7 @@ body {
 <img src="images/img1.png">
 <div>
 <div class="title">Kommuners planlægning er erstatningsfri regulering</div>
-<div class="desc">Kommuner kan ændre status på veje. Det giver større fleksibilitet i planlægningen. Flere projekter påvirkes fremover.</div>
+<div class="desc">Kommuner kan ændre status på veje. Det giver fleksibilitet i planlægningen. Flere projekter påvirkes fremover.</div>
 </div>
 </div>
 
@@ -190,7 +191,7 @@ body {
 <img src="images/img2.png">
 <div>
 <div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-<div class="desc">Retten vurderer sikkerheden var tilstrækkelig. Sagen understreger vigtigheden af korrekt dokumentation i byggebranchen.</div>
+<div class="desc">Retten vurderer sikkerheden var tilstrækkelig. Dokumentation er afgørende i byggebranchen.</div>
 </div>
 </div>
 
@@ -198,7 +199,7 @@ body {
 <img src="images/img3.png">
 <div>
 <div class="title">Minkfarme bliver til sociale mødesteder</div>
-<div class="desc">Tidligere minkfarme får nyt liv som fællesskabsprojekter. Lokale initiativer skaber aktivitet og nye muligheder.</div>
+<div class="desc">Lokale projekter skaber nyt liv. Fællesskab og aktiviteter vokser i landdistrikterne.</div>
 </div>
 </div>
 
@@ -206,7 +207,7 @@ body {
 <img src="images/img4.png">
 <div>
 <div class="title">Nye regler for særtransporter</div>
-<div class="desc">Transport af tunge elementer får nye krav. Virksomheder skal sikre bedre planlægning og godkendelser fremover.</div>
+<div class="desc">Transport af tunge elementer får nye krav. Planlægning og godkendelser skærpes markant.</div>
 </div>
 </div>
 
@@ -230,7 +231,7 @@ body {
 <img src="images/img5.png">
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">Politiet har fundet flere stjålne maskiner. Tyveri er stigende og kræver øget fokus på sikring.</div>
+<div class="desc">Tyveri er stigende i branchen. Fokus på sikring og kontrol øges markant.</div>
 </div>
 </div>
 
@@ -275,7 +276,7 @@ body {
 <img src="images/img5.png">
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">Tyveri af entreprenørmateriel er stigende. Branchen øger fokus på sikkerhed og kontrol.</div>
+<div class="desc">Tyveri af entreprenørmateriel er stigende. Branchen øger fokus på sikkerhed.</div>
 </div>
 </div>
 
@@ -283,7 +284,7 @@ body {
 <img src="images/img6.png">
 <div>
 <div class="title">Stemas viser el-maskiner frem</div>
-<div class="desc">Elektriske maskiner vinder frem. CO2 og støj reduceres markant på byggepladser.</div>
+<div class="desc">Elektriske maskiner reducerer CO2 og støj. Efterspørgslen stiger blandt entreprenører.</div>
 </div>
 </div>
 
@@ -291,54 +292,18 @@ body {
 <img src="images/img4.png">
 <div>
 <div class="title">Flere projekter kræver specialtransport</div>
-<div class="desc">Større projekter stiller nye krav til logistik. Specialtransport bliver en vigtig del fremover.</div>
+<div class="desc">Logistik bliver vigtigere i større projekter. Kompleksiteten stiger i branchen.</div>
 </div>
 </div>
 
 </div>
 
-<div class="section">Øvrige nyheder fra BygTek.dk</div>
-
-<div class="article">
-<img src="images/img1.png">
-<div>
-<div class="title">Kommuners planlægning er erstatningsfri regulering</div>
-<div class="desc">Kommuner får større frihed i planlægning. Nye projekter tilpasses løbende.</div>
-</div>
-</div>
-
-<div class="article">
-<img src="images/img2.png">
-<div>
-<div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-<div class="desc">Retten vurderer reglerne er overholdt. Dokumentation er fortsat afgørende.</div>
-</div>
-</div>
-
-</div>
-
-<div class="right">
-<div class="ad"><img src="images/ad1.png"></div>
-<div class="ad"><img src="images/ad2.png"></div>
 </div>
 
 </div>
 
 <div class="bottom-ad">
 <img src="images/ad3.png">
-</div>
-
-<div style="padding:10px;">
-<div class="section-blue">Ugens tema: EntreprenørMateriel</div>
-
-<div class="article">
-<img src="images/img5.png">
-<div>
-<div class="title">Stjålne maskiner fundet ved ransagning</div>
-<div class="desc">Fokus på sikkerhed og kontrol i branchen øges markant.</div>
-</div>
-</div>
-
 </div>
 
 <div class="footer" onclick="toggleView()">BygTek.dk – Nyhedsbrev</div>
@@ -357,14 +322,27 @@ function formatDate() {
 document.getElementById("date1").innerText = formatDate();
 document.getElementById("date2").innerText = formatDate();
 
+/* 🔥 3-step toggle */
+let state = 0;
+
 function toggleView() {
     const before = document.getElementById("before");
     const after = document.getElementById("after");
 
-    if (after.style.display === "none") {
+    state++;
+
+    if (state === 1) {
+        before.style.display = "none";
         after.style.display = "block";
-    } else {
+    }
+    else if (state === 2) {
+        before.style.display = "block";
+        after.style.display = "block";
+    }
+    else {
+        before.style.display = "block";
         after.style.display = "none";
+        state = 0;
     }
 }
 </script>
