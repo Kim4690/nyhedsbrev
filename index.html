@@ -42,17 +42,24 @@ body {
     display:block;
 }
 
-/* LOGO */
+/* LOGO BJÆLKE (lavere) */
 .logo {
     background:#1a1a1a;
-    height:44px;
+    height:40px;
     display:flex;
     align-items:center;
-    padding-left:14px;
+    padding:0 14px;
+    justify-content:space-between;
 }
 
 .logo img {
-    height:28px;
+    height:24px;
+}
+
+/* DATO */
+.date {
+    color:#fff;
+    font-size:11px;
 }
 
 /* GRID */
@@ -62,7 +69,7 @@ body {
 
 .left {
     width:420px;
-    padding:14px;
+    padding:12px;
 }
 
 .right {
@@ -74,8 +81,8 @@ body {
 /* ARTIKLER */
 .article {
     display:flex;
-    margin-bottom:16px;
-    min-height:70px;
+    margin-bottom:14px;
+    min-height:65px;
 }
 
 .article img {
@@ -102,39 +109,46 @@ body {
     overflow:hidden;
 }
 
-/* SECTIONS */
-.section {
-    background:#e5e5e5;
+/* GRØN SEKTION (som du ville have) */
+.section-green {
+    background:#e6f2e9;
+    border-left:4px solid #4f8a5b;
     padding:10px;
     font-weight:bold;
-    margin:16px 0 10px;
+    margin-bottom:8px;
 }
 
-/* GRØN */
-.section-green {
-    background:#e9f3ec;
-    border-left:4px solid #5e8f65;
-    padding:10px;
+/* STANDARD SECTION */
+.section {
+    background:#e6e6e6;
+    padding:8px;
     font-weight:bold;
-    margin-bottom:10px;
+    margin:10px 0 8px;
 }
 
 /* BLÅ */
 .section-blue {
     background:#d9e3f0;
-    padding:10px;
+    padding:8px;
     font-weight:bold;
-    margin:16px 0 10px;
+    margin:10px 0 8px;
 }
 
+/* EFTER BOX */
 .highlight {
     background:#f3f3f3;
     padding:10px;
 }
 
+/* ADS */
 .ad img {
     width:100%;
-    margin-bottom:10px;
+    margin-bottom:8px;
+}
+
+/* BUND BANNER (mindre spacing) */
+.bottom-ad {
+    margin:6px 0;
 }
 
 .bottom-ad img {
@@ -146,7 +160,7 @@ body {
     background:#000;
     color:#fff;
     text-align:center;
-    padding:12px;
+    padding:10px;
     font-size:12px;
 }
 </style>
@@ -168,6 +182,7 @@ body {
 
 <div class="logo">
 <img src="images/logo-002.png">
+<div class="date" id="date1"></div>
 </div>
 
 <div class="container">
@@ -192,8 +207,8 @@ Flere projekter forventes påvirket af den nye praksis.
 <div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
 <div class="desc">
 En alvorlig arbejdsulykke førte til retssag mod arbejdsgiver.
-Retten vurderer, at sikkerheden var tilstrækkelig på stedet.
-Sagen understreger krav til dokumentation i byggebranchen.
+Retten vurderer, at sikkerheden var tilstrækkelig.
+Sagen understreger krav til dokumentation.
 </div>
 </div>
 </div>
@@ -204,7 +219,7 @@ Sagen understreger krav til dokumentation i byggebranchen.
 <div class="title">Minkfarme bliver til sociale mødesteder</div>
 <div class="desc">
 Tidligere minkfarme får nyt liv som fællesskabsprojekter.
-Lokale initiativer skaber nye aktiviteter i landdistrikter.
+Lokale initiativer skaber aktivitet.
 Flere kommuner arbejder med lignende løsninger.
 </div>
 </div>
@@ -215,8 +230,8 @@ Flere kommuner arbejder med lignende løsninger.
 <div>
 <div class="title">Nye regler for særtransporter</div>
 <div class="desc">
-Transport af tunge elementer får nye krav og procedurer.
-Virksomheder skal sikre bedre planlægning og godkendelser.
+Transport af tunge elementer får nye krav.
+Virksomheder skal sikre bedre planlægning.
 Reglerne træder i kraft i flere faser.
 </div>
 </div>
@@ -235,7 +250,7 @@ Reglerne træder i kraft i flere faser.
 <img src="images/ad3.png">
 </div>
 
-<div style="padding:14px;">
+<div style="padding:12px;">
 <div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
@@ -243,9 +258,9 @@ Reglerne træder i kraft i flere faser.
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
 <div class="desc">
-Politiet har fundet flere stjålne entreprenørmaskiner.
-Sagen viser øget fokus på organiseret kriminalitet.
-Branchen opfordres til bedre sikring af udstyr.
+Politiet har fundet flere stjålne maskiner.
+Øget fokus på kriminalitet i branchen.
+Sikring bliver vigtigere fremover.
 </div>
 </div>
 </div>
@@ -269,6 +284,7 @@ Branchen opfordres til bedre sikring af udstyr.
 
 <div class="logo">
 <img src="images/logo-002.png">
+<div class="date" id="date2"></div>
 </div>
 
 <div class="container">
@@ -286,9 +302,9 @@ Nyheder inden for dine valgte fagsektioner
 <div>
 <div class="title">Nye regler for særtransporter</div>
 <div class="desc">
-Skærpede krav til transport af tunge elementer i byggeriet.
-Virksomheder skal tilpasse planlægning og dokumentation.
-Reglerne forventes at påvirke mange projekter.
+Skærpede krav til transport af tunge elementer.
+Virksomheder skal tilpasse planlægning.
+Reglerne påvirker mange projekter.
 </div>
 </div>
 </div>
@@ -298,9 +314,9 @@ Reglerne forventes at påvirke mange projekter.
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
 <div class="desc">
-Politiet har beslaglagt flere maskiner ved en større aktion.
-Tyveri af entreprenørmateriel er stigende.
-Branchen øger fokus på sikring og sporing.
+Politiet har beslaglagt maskiner ved aktion.
+Tyveri er stigende i branchen.
+Fokus på sikring og sporing øges.
 </div>
 </div>
 </div>
@@ -310,8 +326,8 @@ Branchen øger fokus på sikring og sporing.
 <div>
 <div class="title">Stemas viser el-maskiner frem</div>
 <div class="desc">
-Elektriske maskiner bliver mere udbredte på byggepladser.
-De reducerer både støj og CO2-udledning.
+Elektriske maskiner vinder frem.
+CO2 og støj reduceres.
 Efterspørgslen stiger blandt entreprenører.
 </div>
 </div>
@@ -322,9 +338,9 @@ Efterspørgslen stiger blandt entreprenører.
 <div>
 <div class="title">Flere projekter kræver specialtransport</div>
 <div class="desc">
-Større byggeprojekter stiller nye krav til logistik.
-Specialtransport bliver en vigtig del af planlægningen.
-Eksperter forventer øget kompleksitet fremover.
+Større projekter kræver bedre logistik.
+Specialtransport bliver vigtig.
+Kompleksiteten stiger fremover.
 </div>
 </div>
 </div>
@@ -334,31 +350,21 @@ Eksperter forventer øget kompleksitet fremover.
 <div class="section">Øvrige nyheder fra BygTek.dk</div>
 
 <div class="article">
+<img src="images/img1.png">
+<div>
+<div class="title">Kommuners planlægning er erstatningsfri regulering</div>
+</div>
+</div>
+
+<div class="article">
 <img src="images/img2.png">
 <div>
 <div class="title">Arbejdsgiver frikendt for arbejdsulykke</div>
-<div class="desc">
-En alvorlig arbejdsulykke førte til retssag mod arbejdsgiver.
-Retten vurderer, at sikkerheden var tilstrækkelig på stedet.
-Sagen understreger krav til dokumentation i byggebranchen.
 </div>
 </div>
+
 </div>
-    
-<div class="article">
-<img src="images/img3.png">
-<div>
-<div class="title">Minkfarme bliver til sociale mødesteder</div>
-<div class="desc">
-Tidligere minkfarme får nyt liv som fællesskabsprojekter.
-Lokale initiativer skaber nye aktiviteter i landdistrikter.
-Flere kommuner arbejder med lignende løsninger.
-</div>
-</div>
-</div>
-    
-</div>
-    
+
 <div class="right">
 <div class="ad"><img src="images/ad1.png"></div>
 <div class="ad"><img src="images/ad2.png"></div>
@@ -370,7 +376,7 @@ Flere kommuner arbejder med lignende løsninger.
 <img src="images/ad3.png">
 </div>
 
-<div style="padding:14px;">
+<div style="padding:12px;">
 <div class="section-blue">Ugens tema: EntreprenørMateriel</div>
 
 <div class="article">
@@ -378,9 +384,9 @@ Flere kommuner arbejder med lignende løsninger.
 <div>
 <div class="title">Stjålne maskiner fundet ved ransagning</div>
 <div class="desc">
-Fokus på sikkerhed og kontrol i branchen.
+Fokus på sikkerhed og kontrol.
 Virksomheder arbejder mere systematisk.
-Forebyggelse bliver en vigtig faktor fremover.
+Forebyggelse bliver centralt.
 </div>
 </div>
 </div>
@@ -393,6 +399,18 @@ Forebyggelse bliver en vigtig faktor fremover.
 </div>
 
 </div>
+
+<!-- AUTO DATO -->
+<script>
+function formatDate() {
+    const d = new Date();
+    const days = ["SØNDAG","MANDAG","TIRSDAG","ONSDAG","TORSDAG","FREDAG","LØRDAG"];
+    const months = ["JANUAR","FEBRUAR","MARTS","APRIL","MAJ","JUNI","JULI","AUGUST","SEPTEMBER","OKTOBER","NOVEMBER","DECEMBER"];
+    return days[d.getDay()] + " " + d.getDate() + "/" + (d.getMonth()+1) + " " + d.getFullYear();
+}
+document.getElementById("date1").innerText = formatDate();
+document.getElementById("date2").innerText = formatDate();
+</script>
 
 </body>
 </html>
